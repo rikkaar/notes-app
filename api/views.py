@@ -1,5 +1,6 @@
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
+
 from .serializers import *
 
 
@@ -82,4 +83,3 @@ def updateNote(request, pk):
         serializer.save()
 
     return Response(serializer.data)
-
