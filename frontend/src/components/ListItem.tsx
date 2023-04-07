@@ -9,7 +9,7 @@ interface Data {
 
 const ListItem: FC<Data> = ({note}) => {
     return (
-        <Link to={`/notes/${note.id}/`}>
+        <Link to={`/${note.id}/`}>
             <div className={"notes-list-item"}>
                 <h3>{note.body}</h3>
             </div>

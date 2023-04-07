@@ -14,8 +14,7 @@ const AddButton: FC = () => {
             created: "2023-01-26T21:20:38.141546Z"
         })
         console.log("Hi!")
-        console.log("/notes/" + response.data.id);
-        navigate("/notes/" + response.data.id);
+        navigate("/" + response.data.id);
     }
 
 

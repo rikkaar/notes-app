@@ -33,7 +33,7 @@ const NotePage: FC = () => {
 
     function deleteNote() {
         axios.delete(`/api/notes/${id}/delete/`);
-        navigate("/notes");
+        navigate("/");
     }
 
     let handleSubmit = () => {
@@ -43,7 +43,7 @@ const NotePage: FC = () => {
             updateNote();
         }
         console.log(note);
-        navigate("/notes/");
+        navigate("/");
     }
 
     if (note !== null)
@@ -69,7 +69,7 @@ const NotePage: FC = () => {
         <div className={"note"}>
             <div className={"note-header"}>
                 <h3>
-                    <Link to={"/notes"}>
+                    <Link to={"/"}>
                         <ArrowLeft/>
                     </Link>
                 </h3>
